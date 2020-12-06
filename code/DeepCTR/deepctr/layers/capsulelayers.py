@@ -142,7 +142,6 @@ class CapsuleLayer(Layer):
         #inputs_hat.shape[None,input_num_capsule,num_capsule,dim_capsule]
         inputs_hat=tf.tensordot(inputs, self.reweight_W, axes=(-1, 0))
         inputs_hat=K.permute_dimensions(inputs_hat, (0,2,1,3))
-        print('input_hat',inputs_hat.shape)
         
         b = K.expand_dims(self.routing_init,0)
         b = K.tile(b,[K.shape(inputs_hat)[0],1,1])
