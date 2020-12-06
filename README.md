@@ -14,7 +14,7 @@ feature “<unknown>”, where threshold is set to 20 for Criteo, Avazu data set
 features may have large variance and hurt machine learning algorithms, we normalize numerical values by transforming a value z to $log_2(z)$ if z > 2, which is proposed by the [winner of Criteo Competition](https://www.csie.ntu.edu.tw/~r01922136/kaggle-2014-criteo.pdf).
 
 ## Training Example
-Our model [./code/DeepCTR/deepctr/models/hfcn.py](https://github.com/Puzz1eX/HFCN/blob/main/code/DeepCTR/deepctr/models/hfcn.py)
+Our model [./code/DeepCTR/deepctr/models/hfcn.py](https://github.com/Puzz1eX/HFCN/blob/main/code/DeepCTR/deepctr/models/hfcn.py)  
 Our layers [./code/DeepCTR/deepctr/layers/capsulelayers.py](https://github.com/Puzz1eX/HFCN/blob/main/code/DeepCTR/deepctr/layers/capsulelayers.py)
 Train script:  
 ```sh
